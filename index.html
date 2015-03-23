@@ -7,9 +7,90 @@
         <title>ST TRACS</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,400' rel='stylesheet' type='text/css'>
+        <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
     </head>
     <body>
+        <nav class="st-navbar full" id="st-navbar">
+            <div class="st-container">
+                <a href="#" class="navbar-logo">
+                    <img src="img/teseo.png" />
+                </a>
+                <div class="navbar-menu">
+                    <a href="#" class="active">Accueil</a>
+                    <a href="#first-section">Section1</a>
+                    <a href="#second-section">Section2</a>
+                    <a href="#team">L'équipe</a>
+                    <a href="#fourth-section">Section4</a>
+                </div>
+                <div class="navbar-ico-resp" id="navbar-ico-resp">
+                </div>
+            </div>
+        </nav>
+        <header id="cover">
+            <div class="bg-cover">
+                <div class="header-content st-container" id="header-content">
+                    <h1>TESEO</h1>
+                    <p>Une application mise en place en partenariat avec l'entreprise ST Microelectronics par des étudiants de l'INSA de Rennes.</p>
 
-        <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+                    <a class="header-btn discover-btn" href="#first-section">Découvrez</a>
+                </div>
+                <div class="scroll-down">
+                    <a href="#first-section" class="discover-btn">
+                        <img src="img/scrollDown.png">
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <section class="content" id="first-section">
+            First Section
+        </section>
+
+        <section class="content" id="second-section">
+            Second Section
+        </section>
+
+        <section class="content" id="team">
+            TEAM
+        </section>
+
+        <section class="content" id="fourth-section">
+            Fourth Section
+        </section>
+
+        <script type="text/javascript">
+            function juizScrollTo(element){
+                $(element).click(function(){
+                    var goscroll = false;
+                    var the_hash = $(this).attr("href");
+                    var regex = new RegExp("\#(.*)","gi");
+                    var the_element = '';
+             
+                    if(the_hash.match("\#(.+)")) {
+                        the_hash = the_hash.replace(regex,"$1");
+
+                        if($("#"+the_hash).length>0) {
+                            the_element = "#" + the_hash;
+                            goscroll = true;
+                        }
+                        else if($("a[name=" + the_hash + "]").length>0) {
+                            the_element = "a[name=" + the_hash + "]";
+                            goscroll = true;
+                        }
+
+                        if(goscroll) {
+                            scrollIndex = $(the_element).offset().top - 60;
+                            $('html, body').animate({
+                                scrollTop:scrollIndex
+                            }, 'slow');
+                            return false;
+                        }
+                    }
+                });
+            };
+            juizScrollTo('a[href^="#"]');
+        </script>
     </body>
 </html>
