@@ -160,6 +160,32 @@ body {
     height: 100vh;
 }
 
+section h2 {
+    font-family: Open sans;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align:center;
+}
+
+section.team {
+    padding: 20px 30px;
+}
+
+table.team-presentation>tbody>tr>td {
+    border-top: 0;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.team-presentation td img{
+    width: 110px;
+}
+
+.team-presentation td p{
+    font-family: Open sans;
+    font-size: 14px;
+}
+
 @media only screen and (max-width: 768px) {
     .header-content {
         top: 20%;
