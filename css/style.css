@@ -5,12 +5,12 @@ body {
 *****************HEADER******************
 ****************************************/
 
-header {
+#header {
     background: url('../img/header_background.jpg') no-repeat top center fixed;
     background-size: cover;
 }
 
-header .bg-cover {
+#header .bg-cover {
     position: absolute;
     right: 0;
     left: 0;
@@ -68,14 +68,13 @@ header .bg-cover {
     color: #fff;
 }
 
-.header-btn:active {
+.header-btn:visited:hover {
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 
 .header-btn:link {
     text-decoration: none;
-    color: #fff;
 }
 
 .scroll-down {

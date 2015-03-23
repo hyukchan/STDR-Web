@@ -18,7 +18,7 @@
                     <img src="img/teseo.png" />
                 </a>
                 <div class="navbar-menu">
-                    <a href="#" class="active">Accueil</a>
+                    <a href="#header" class="active">Accueil</a>
                     <a href="#first-section">Section1</a>
                     <a href="#second-section">Section2</a>
                     <a href="#team">L'équipe</a>
@@ -28,7 +28,7 @@
                 </div>
             </div>
         </nav>
-        <header id="cover">
+        <section id="header">
             <div class="bg-cover">
                 <div class="header-content st-container" id="header-content">
                     <h1>TESEO</h1>
@@ -42,7 +42,7 @@
                     </a>
                 </div>
             </div>
-        </header>
+        </section>
 
         <section class="content" id="first-section">
             First Section
@@ -61,6 +61,11 @@
         </section>
 
         <script type="text/javascript">
+
+            $(document).on('click','.responsive .navbar-menu a', function() {
+                $("#st-navbar").toggleClass('reponsive');
+            })
+
             function juizScrollTo(element){
                 $(element).click(function(){
                     var goscroll = false;
@@ -81,6 +86,9 @@
                         }
 
                         if(goscroll) {
+                            if ($(element).parents('.responsive').length) {
+                                $("#st-navbar").toggleClass('responsive');
+                            }
                             scrollIndex = $(the_element).offset().top - 60;
                             $('html, body').animate({
                                 scrollTop:scrollIndex
