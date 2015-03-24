@@ -1,19 +1,32 @@
+.s2 {
+    background: url('../img/s2/bg.jpg') no-repeat;
+    background-size: cover;
+}
+
 .s2 div {
     box-sizing: border-box;
 }
 
 .s2 > h1 {
-    text-align: center;
-    padding-top: 2%;
+    color: white;
 }
 
-.s2 .left {
-    display: inline-block;
-    position: relative;
-    width: 45%;
-    height: 50px;
+.s2 > h3 {
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid #d3d3d3;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+.s2 .row {
     height: 80%;
-    margin-left: 15%;
+    margin-top: 30px;
+}
+
+.s2 .row > .left {
+    height: 80%;
 }
 
 .s2 .tablet {
@@ -51,18 +64,23 @@
     right: 10.5%;
 }
 
+.s2 .tuto3 + .popover {
+    width: 200px;
+}
+
 .s2 .inside img {
     display: block;
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 
-
-.s2 .right {
-    display: inline-block;
-    width: 40%;
-    float:right;
+.s2 .row > .right {
     height: 80%;
     position: relative;
 }
@@ -83,4 +101,17 @@
 
 .s2 .desc.current {
     display: block;
+}
+
+.s2 .tuto3 {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 50px;
+}
+
+.s2 .tuto4 {
+    position: absolute;
+    top: 0;
+    right: -150px;
 }
