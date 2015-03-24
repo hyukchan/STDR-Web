@@ -45,7 +45,9 @@ $(document).ready(function() {
         ShrinkNavbar();
         EraseHeaderContent();
         UpdateActiveSection();
-    })
+    });
+    ShrinkNavbar();
+
 });
 
 $(document).on('click','#navbar-ico-resp',function(){
