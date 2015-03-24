@@ -1,12 +1,43 @@
+var tutoState = 0;
+var screenState = 0;
 $(document).ready(function() {
     $(window).resize(resize);
     resize();
 
     $(".s2 .nav a").click(function(e) {
-        e.preventDefault();
-        switchTitle($(this).attr("data-title"), function(a) {
-            $(".s2 .inside img").first().attr("src", "img/s2/gif/" + a + ".gif");
-        }, $(this).attr("data-id"));
+        if(screenState != $(this).attr("data-title")) {
+            screenState = $(this).attr("data-title");
+            switchTitle($(this).attr("data-title"), function (a) {
+                $(".s2 .inside img").first().attr("src", "img/s2/gif/" + a + ".gif");
+            }, $(this).attr("data-id"));
+        }
+    });
+
+    $('.s2 [data-toggle="popover"]').popover();
+    $(".s2 .tuto1").popover('show');
+
+    $(".s2").click(function() {
+        switch(tutoState) {
+            case 0:
+                $(".s2 .tuto1").popover('hide');
+                $(".s2 .tuto2").popover('show');
+                tutoState++;
+                break;
+            case 1:
+                $(".s2 .tuto2").popover('hide');
+                $(".s2 .tuto3").popover('show');
+                tutoState++;
+                break;
+            case 2:
+                $(".s2 .tuto3").popover('hide');
+                $(".s2 .tuto4").popover('show');
+                tutoState++;
+                break;
+            case 3:
+                $(".s2 .tuto4").popover('hide');
+                tutoState++;
+                break;
+        }
 
         return false;
     });
@@ -33,7 +64,7 @@ function resize () {
 }
 
 function switchTitle(newTitle, cb, a) {
-    var t = $(".s2 > h1");
+    var t = $(".s2 > h3");
     $(".s2 .current").fadeOut(300);
     t.fadeOut(300, function() {
         t.html(newTitle);
