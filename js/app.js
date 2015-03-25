@@ -69,6 +69,7 @@ $(document).ready(function() {
         accessibility:true,
         arrows:true,
         centerNode:true,
-        dots:true
+        dots:true,
+        centerPadding: '30px'
     });
 });

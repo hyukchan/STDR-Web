@@ -255,11 +255,11 @@
     <h2>Menu d'options</h2>
 
     <div class="carousel">
-        <div>
+        <div class="carousel-slide">
             <div class="row">
                 <img src="img/s4/menu.png" class="col-md-8" />
 
-                <div class="well col-md-3 description">
+                <div class="well col-md-4">
                     <h3>Menu d'options</h3>
 
                     <p>
@@ -270,11 +270,11 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div class="carousel-slide">
             <div class="row">
                 <img src="img/s4/menu_select_device.png" class="col-md-8" />
 
-                <div class="well col-md-3">
+                <div class="well col-md-4">
                     <h3>Select Device</h3>
 
                     <p>
@@ -297,7 +297,14 @@
                     <h3>Playback</h3>
 
                     <p>
-                        Les vues sont plus du tout les même en fait, ca me casse les couilles....
+                        Cette vue nous permet de rejouer un parcours déjà enregistré.
+                        Elle contient donc tous les dossiers, ainsi que les fichiers NMEA ou binaire ST
+                        présent sur la carte SD. Lorsque l’utilisateur choisit un de ces fichiers, une boîte
+                        de dialogue s’affichera où il pourra régler plusieurs paramètres comme la vitesse
+                        à laquelle il veut que la vidéo se déroule. De plus, il pourra choisir à partir de
+                        quel moment il veut rejouer la vidéo grâce à un curseur de contrôle. Après avoir
+                        choisi les réglages qui lui conviennent, l’utilisateur pourra lancer le playback ou
+                        annuler en cliquant sur les deux boutons respectifs.
                     </p>
                 </div>
             </div>
@@ -310,7 +317,13 @@
                     <h3>Upload File</h3>
 
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing…
+                        Cette vue permet d’envoyer des fichiers présents sur la carte SD
+                        vers un serveur FTP si la connexion réseau est établie (3G/wifi). L’utilisateur
+                        a la possiblité de choisir le fichier qu’il veut enregistrer et une fois qu’il l’a
+                        sélectionné une boîte de dialogue apparaît qui lui spécifiera le nom du fichier
+                        choisi, la progression de l’enregistrement et qui lui donnera l’opportunité d’annuler
+                        l’envoi. De plus, l’utilisateur y trouvera à titre informatif l’adresse IP du
+                        serveur FTP, le port de connexion, ainsi que le login et son mot de passe.
                     </p>
                 </div>
             </div>
@@ -323,8 +336,39 @@
                     <h3>Settings</h3>
 
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing…
+                        Cette vue permet à l’utilisateur de faire plusieurs réglages et ressemblera à
+                        la figure ci-contre. Les différents réglages possibles seront :
                     </p>
+
+                    <ul style="padding-left: 20px">
+                        <li>
+                            l’Écran d’accueil au démarrage de l’application ;
+                        </li>
+                        <li>
+                            l’orientation de l’écran (auto, paysage, portrait) ;
+                        </li>
+                        <li>
+                            l’activation ou la désactivation de l’extinction automatique de l’écran ;
+                        </li>
+                        <li>
+                            le type de carte ;
+                        </li>
+                        <li>
+                            le datum (WGS84 (World Geodetic System 1984 ) par défaut) ;
+                        </li>
+                        <li>
+                            le format de l’heure (24H, AM/PM pour la version en anglais) ;
+                        </li>
+                        <li>
+                            le format des coordonnées GNSS (DD°MM.MMMM’; DD°MM’SS.SSS) ;
+                        </li>
+                        <li>
+                            l’unité des vitesses et distances (Métrique, Nautique, Impérial) ;
+                        </li>
+                        <li>
+                            l’unité d’altitude (Métrique, Impérial).
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

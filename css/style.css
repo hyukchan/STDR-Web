@@ -186,11 +186,19 @@ table.team-presentation > tbody > tr > td {
     font-size:   14px;
 }
 
+#fourth-section {
+    padding: 20px 30px;
+}
+
 .carousel {
     max-width: 1170px;
     margin:    auto;
+    padding: 30px 30px 0px;
 }
 
+.carousel-slide {
+
+}
 
 @media only screen and (max-width: 768px) {
     .header-content {
