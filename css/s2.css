@@ -8,13 +8,10 @@
 }
 
 .s2 > h1 {
-    color: white;
 }
 
 .s2 > h3 {
-    color: white;
     text-align: center;
-    border-bottom: 1px solid #d3d3d3;
     margin-top: 0;
     margin-bottom: 20px;
     padding-bottom: 15px;
@@ -47,6 +44,29 @@
     font-size: 0;
 }
 
+.s2 .tuto-on {
+    border: 2px solid red;
+    border-radius: 8px;
+}
+
+.s2 .leftPanel {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 34.2%;
+    z-index: 2;
+}
+
+.s2 .rightPanel {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 65.8%;
+    z-index: 2;
+}
+
 .s2 .nav a {
     display: inline-block;
     padding: 0;
@@ -62,6 +82,7 @@
     bottom: 6%;
     left: 10.4%;
     right: 10.5%;
+    overflow: hidden;
 }
 
 .s2 .tuto3 + .popover {
@@ -94,9 +115,15 @@
 
 .s2 .desc {
     position: relative;
-    top: -50%;
-    left: 5%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    color: white;
     display: none;
+}
+
+.s2 .desc blockquote {
+    margin-bottom: 0;
 }
 
 .s2 .desc.current {
@@ -114,4 +141,12 @@
     position: absolute;
     top: 0;
     right: -150px;
+}
+
+.s2 .i1 {
+    left: 0;
+}
+
+.s2 .inside img.i2 {
+    left: 100%;
 }
