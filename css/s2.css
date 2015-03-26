@@ -61,6 +61,7 @@
     bottom: 6%;
     left: 10.4%;
     right: 10.5%;
+    overflow: hidden;
 }
 
 .s2 .tuto3 + .popover {
@@ -113,4 +114,12 @@
     position: absolute;
     top: 0;
     right: -150px;
+}
+
+.s2 .i1 {
+    left: 0;
+}
+
+.s2 .inside img.i2 {
+    left: 100%;
 }
