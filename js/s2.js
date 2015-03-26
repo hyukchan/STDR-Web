@@ -16,29 +16,29 @@ $(document).ready(function() {
         }
     });
 
-    $('.s2 [data-toggle="popover"]').popover();
+    $('.s2 [data-toggle="popover"]').popover({
+        container: 'body'
+    });
     $(".s2 .tuto1").popover('show');
 
-    $(".s2").click(function() {
+    $(".s2").bind('click', function() {
         switch(tutoState) {
             case 0:
-                $(".s2 .tuto1").popover('hide');
+                $(".s2 .tuto1").popover('hide').removeClass("tuto-on");;
                 $(".s2 .tuto2").popover('show');
+                $(".s2 .leftPanel").addClass("tuto-on");
                 tutoState++;
                 break;
             case 1:
+                $(".s2 .leftPanel").removeClass("tuto-on");
                 $(".s2 .tuto2").popover('hide');
                 $(".s2 .tuto3").popover('show');
+                $(".s2 .rightPanel").addClass("tuto-on");
                 tutoState++;
                 break;
             case 2:
                 $(".s2 .tuto3").popover('hide');
-                $(".s2 .tuto4").popover('show');
-                tutoState++;
-                break;
-            case 3:
-                $(".s2 .tuto4").popover('hide');
-                tutoState++;
+                $(".s2 .rightPanel").removeClass("tuto-on");
                 break;
         }
 
@@ -67,6 +67,10 @@ function resize () {
         tab.css("width", left.width() + "px");
         tab.css("height", (left.width() * 1080 / 1611) + "px");
     }
+
+    $(".desc").each(function() {
+        $(this).css("top", "-" + ($(this).height()/2) + "px");
+    });
 }
 
 function switchTitle(newTitle, cb, a) {
@@ -82,7 +86,6 @@ function switchTitle(newTitle, cb, a) {
 }
 
 function switchImage(a, right) {
-    console.log(a);
     i2.attr("src", "img/s2/gif/" + a + ".gif");
 
     if(right) {
