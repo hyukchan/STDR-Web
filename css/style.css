@@ -39,12 +39,26 @@ body {
     color:          #ffffff;
 }
 
+.header-content h2 {
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size:      23px;
+    font-weight:    300;
+    color:          #ffffff;
+    margin-top: -10px;
+}
+
 .header-content p {
     line-height: 1.5em;
     font-size:   18px;
     font-weight: 300;
     padding:     50px 100px;
     color:       #ffffff;
+}
+
+.header-first-letter {
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .header-btn {
@@ -217,6 +231,14 @@ table.team-presentation > tbody > tr > td {
 .team-presentation td p {
     font-family: Open sans;
     font-size:   14px;
+    font-weight: 600;
+}
+
+.team-presentation .fonction {
+    font-family: Open sans;
+    font-size:   12px;
+    margin-top: -10px;
+    font-weight: 300;
 }
 
 #fourth-section {
@@ -234,9 +256,6 @@ table.team-presentation > tbody > tr > td {
 }
 
 @media only screen and (max-width: 992px) {
-    .content {
-        height: auto;
-    }
     .header-content {
         top: 20%;
     }
