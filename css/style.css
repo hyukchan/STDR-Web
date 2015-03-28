@@ -213,7 +213,7 @@ section h2 {
     margin: 20px;
 }
 
-/***** SECTION 3 *****/
+/***** SECTION 4 *****/
 section.team {
     padding: 20px 30px;
 }
@@ -243,6 +243,16 @@ table.team-presentation > tbody > tr > td {
 
 #fourth-section {
     padding: 20px 30px;
+}
+
+/***** SECTION 3 *****/
+.s3 {
+    background: url('../img/s3/bg.jpg') no-repeat;
+    background-size: cover;
+}
+
+.s3 h2{
+    color: #d3d3d3;
 }
 
 .carousel {

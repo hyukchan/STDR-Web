@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/s2.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,400' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/s2.js"></script>
 </head>
@@ -186,110 +186,78 @@
     </div>
 </section>
 
-<section class="content container-fluid" id="third-section" style="background-color: #336633">
+<section class="content s3 container-fluid" id="third-section" style="background-color: #336633">
     <h2>Extras</h2>
 
     <div class="carousel">
         <div class="carousel-slide">
             <div class="row">
-                <img src="img/s4/menu_select_device.png" class="col-md-8" />
+                <img src="img/s3/menu.png" class="col-md-8" />
 
-                <div class="well col-md-4">
+                <div class="well col-md-3">
+                    <h3>Menu d'options</h3>
+
+                    <p>
+                        Des fonctionnalités supplémentaires sont disponibles via le menu d'options.
+                        On y accède par un bouton se situant dans le coin supérieur droit de l'application
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-slide">
+            <div class="row">
+                <img src="img/s3/menu_select_device.png" class="col-md-8" />
+
+                <div class="well col-md-3">
                     <h3>Select Device</h3>
 
                     <p>
-                        Si la tablette détecte des appareils connectés en bluetooth, l'application doit permettre
-                        à l’utilisateur de s’y connecter. Dans le cas contraire, elle se connecte automatiquement
-                        au GPS interne. Cette vue nous propose tous les appareils (GPS)
-                        , qu’ils soient internes ou externes, ainsi que leur adresse MAC. Une fois
-                        l’appareil sélectionné, une boîte de dialogue apparaît, dans laquelle il y a
-                        une barre de progression pour indiquer les étapes de connexion ainsi qu'un bouton permettant
-                        d’annuler cette connexion en cours.
+                        Cette vue permet de se connecter à une puce GPS via Bluetooth.
                     </p>
                 </div>
             </div>
         </div>
         <div>
             <div class="row">
-                <img src="img/s4/menu_playback.png" class="col-md-8" />
+                <img src="img/s3/menu_playback.png" class="col-md-8" />
 
                 <div class="well col-md-3">
                     <h3>Playback</h3>
 
                     <p>
-                        Cette vue nous permet de rejouer un parcours déjà enregistré.
-                        Pour cela elle donne accès à un explorateur de fichier où l’utilisateur pourra selectionner le
-                        fichier qu'il veut rejouer.
-                        Après la séléction, une boîte de dialogue s’affiche où il peut régler plusieurs paramètres comme
-                        la vitesse
-                        à laquelle il veut que la vidéo se déroule. De plus, il peut choisir à partir de
-                        quel moment il veut rejouer la vidéo grâce à un curseur de contrôle. Après avoir
-                        choisi les réglages qui lui conviennent, l’utilisateur peut lancer le playback ou
-                        annuler en cliquant sur les deux boutons respectifs.
+                        L'application permet d'enregistrer le flux de messages bruts provenant d'une puce GPS.
+                        Il faut donc pouvoir les rejouer après enregistrement, ce que permet cette vue.
+                        Elle permet de plus de configurer la vitesse de lecture de l'enregistrement,
+                        et donne la possibilité à l'utilisateur de se déplacer à une position arbitraire du fichier.
                     </p>
                 </div>
             </div>
         </div>
         <div>
             <div class="row">
-                <img src="img/s4/menu_upload.png" class="col-md-8" />
+                <img src="img/s3/menu_upload.png" class="col-md-8" />
 
                 <div class="well col-md-3">
                     <h3>Upload File</h3>
 
                     <p>
-                        Cette vue permet d’envoyer des fichiers présents sur la carte SD
-                        vers un serveur FTP si la connexion réseau est établie (3G/wifi). L’utilisateur
-                        a la possiblité de choisir le fichier qu’il veut enregistrer. Une fois qu’il l’a
-                        sélectionné une boîte de dialogue apparaît avec la possibilité de spécifier le nom du fichier
-                        choisi, la progression de l’enregistrement ainsi ainsi qu'un bouton pour annuler
-                        l’envoi. La vue présente aussi à titre informatif l’adresse IP du
-                        serveur FTP, le port de connexion, ainsi que le login et son mot de passe.
+                        Cette vue est elle aussi en lien avec l'enregistrement de flux de messages provenant de la puce GPS.
+                        Elle permet d'envoyer l'enregistrement réalisé vers un serveur FTP distant.
                     </p>
                 </div>
             </div>
         </div>
         <div>
             <div class="row">
-                <img src="img/s4/menu_settings.png" class="col-md-8" />
+                <img src="img/s3/menu_settings.png" class="col-md-8" />
 
                 <div class="well col-md-3">
                     <h3>Settings</h3>
 
                     <p>
-                        Cette vue permet à l’utilisateur de faire plusieurs réglages et ressemble à
-                        la figure ci-contre. Les différents réglages possibles seront :
+                        Cette vue permet de configurer plusieurs aspects de l'application :
+                        système d'unité utilisé, paramètres liés aux positionnement, etc.
                     </p>
-
-                    <ul style="padding-left: 20px">
-                        <li>
-                            l’Écran d’accueil au démarrage de l’application ;
-                        </li>
-                        <li>
-                            l’orientation de l’écran (auto, paysage, portrait) ;
-                        </li>
-                        <li>
-                            l’activation ou la désactivation de l’extinction automatique de l’écran ;
-                        </li>
-                        <li>
-                            le type de carte ;
-                        </li>
-                        <li>
-                            le datum (WGS84 (World Geodetic System 1984 ) par défaut) ;
-                        </li>
-                        <li>
-                            le format de l’heure (24H, AM/PM pour la version en anglais) ;
-                        </li>
-                        <li>
-                            le format des coordonnées GNSS (DD°MM.MMMM’; DD°MM’SS.SSS) ;
-                        </li>
-                        <li>
-                            l’unité des vitesses et distances (Métrique, Nautique, Impérial) ;
-                        </li>
-                        <li>
-                            l’unité d’altitude (Métrique, Impérial).
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
