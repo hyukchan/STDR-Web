@@ -45,7 +45,7 @@ body {
     font-size:      23px;
     font-weight:    300;
     color:          #ffffff;
-    margin-top: -10px;
+    margin-top:     -10px;
 }
 
 .header-content p {
@@ -58,7 +58,7 @@ body {
 
 .header-first-letter {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight:    600;
 }
 
 .header-btn {
@@ -184,17 +184,17 @@ section h2 {
 /***** SECTION 1 ******/
 .project-presentation-col h3 {
     text-transform: uppercase;
-    font-size: 30px;
-    font-weight: 600;
+    font-size:      30px;
+    font-weight:    600;
 }
 
 .st-icon {
     font-size: 150px;
-    display: block;
-    margin: 30px 0px;
+    display:   block;
+    margin:    30px 0px;
 }
 
-#first-section .row{
+#first-section .row {
     margin-top: 10vh;
 }
 
@@ -204,13 +204,13 @@ section h2 {
 
 .project-presentation-col p {
     font-size: 16px;
-    padding: 0px 20px;
+    padding:   0px 20px;
 }
 
 .project-presentation-description {
     text-align: center;
-    font-size: 18px;
-    margin: 20px;
+    font-size:  18px;
+    margin:     20px;
 }
 
 /***** SECTION 4 *****/
@@ -237,7 +237,7 @@ table.team-presentation > tbody > tr > td {
 .team-presentation .fonction {
     font-family: Open sans;
     font-size:   12px;
-    margin-top: -10px;
+    margin-top:  -10px;
     font-weight: 300;
 }
 
@@ -245,25 +245,7 @@ table.team-presentation > tbody > tr > td {
     padding: 20px 30px;
 }
 
-/***** SECTION 3 *****/
-.s3 {
-    background: url('../img/s3/bg.jpg') no-repeat;
-    background-size: cover;
-}
-
-.s3 h2{
-    color: #d3d3d3;
-}
-
-.carousel {
-    max-width: 1170px;
-    margin:    auto;
-    padding: 100px 30px 0px;
-}
-
-.carousel-slide {
-
-}
+/****/
 
 @media only screen and (max-width: 992px) {
     .header-content {
@@ -319,7 +301,7 @@ table.team-presentation > tbody > tr > td {
         margin-right: 20px;
     }
 
-    #first-section .row{
+    #first-section .row {
         margin: 10px 0px;
     }
 }
@@ -328,29 +310,28 @@ table.team-presentation > tbody > tr > td {
 ******************FONTS******************
 ****************************************/
 
-
 @font-face {
     font-family: 'icomoon';
-    src:url('../fonts/icomoon.eot?3906iw');
-    src:url('../fonts/icomoon.eot?#iefix3906iw') format('embedded-opentype'),
-        url('../fonts/icomoon.woff?3906iw') format('woff'),
-        url('../fonts/icomoon.ttf?3906iw') format('truetype'),
-        url('../fonts/icomoon.svg?3906iw#icomoon') format('svg');
+    src:         url('../fonts/icomoon.eot?3906iw');
+    src:         url('../fonts/icomoon.eot?#iefix3906iw') format('embedded-opentype'),
+                 url('../fonts/icomoon.woff?3906iw') format('woff'),
+                 url('../fonts/icomoon.ttf?3906iw') format('truetype'),
+                 url('../fonts/icomoon.svg?3906iw#icomoon') format('svg');
     font-weight: normal;
-    font-style: normal;
+    font-style:  normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-    font-family: 'icomoon';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
+    font-family:             'icomoon';
+    speak:                   none;
+    font-style:              normal;
+    font-weight:             normal;
+    font-variant:            normal;
+    text-transform:          none;
+    line-height:             1;
 
     /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing:  antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 

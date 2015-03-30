@@ -48,7 +48,6 @@ $(document).ready(function() {
         UpdateActiveSection();
     });
     ShrinkNavbar();
-
 });
 
 $(document).on('click', '#navbar-ico-resp', function() {
@@ -61,15 +60,4 @@ $(".discover-btn").click(function() {
     $('html, body').animate({
         scrollTop: $("#first-section").offset().top + offset
     }, 2000);
-});
-
-
-$(document).ready(function() {
-    $('.carousel').slick({
-        accessibility:true,
-        arrows:true,
-        centerNode:true,
-        dots:true,
-        centerPadding: '30px'
-    });
 });
