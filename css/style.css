@@ -39,12 +39,26 @@ body {
     color:          #ffffff;
 }
 
+.header-content h2 {
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size:      23px;
+    font-weight:    300;
+    color:          #ffffff;
+    margin-top: -10px;
+}
+
 .header-content p {
     line-height: 1.5em;
     font-size:   18px;
     font-weight: 300;
     padding:     50px 100px;
     color:       #ffffff;
+}
+
+.header-first-letter {
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .header-btn {
@@ -199,7 +213,7 @@ section h2 {
     margin: 20px;
 }
 
-/***** SECTION 3 *****/
+/***** SECTION 4 *****/
 section.team {
     padding: 20px 30px;
 }
@@ -217,16 +231,34 @@ table.team-presentation > tbody > tr > td {
 .team-presentation td p {
     font-family: Open sans;
     font-size:   14px;
+    font-weight: 600;
+}
+
+.team-presentation .fonction {
+    font-family: Open sans;
+    font-size:   12px;
+    margin-top: -10px;
+    font-weight: 300;
 }
 
 #fourth-section {
     padding: 20px 30px;
 }
 
+/***** SECTION 3 *****/
+.s3 {
+    background: url('../img/s3/bg.jpg') no-repeat;
+    background-size: cover;
+}
+
+.s3 h2{
+    color: #d3d3d3;
+}
+
 .carousel {
     max-width: 1170px;
     margin:    auto;
-    padding: 30px 30px 0px;
+    padding: 100px 30px 0px;
 }
 
 .carousel-slide {
@@ -234,9 +266,6 @@ table.team-presentation > tbody > tr > td {
 }
 
 @media only screen and (max-width: 992px) {
-    .content {
-        height: auto;
-    }
     .header-content {
         top: 20%;
     }

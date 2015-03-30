@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/s2.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,400' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/s2.js"></script>
 </head>
@@ -26,11 +26,11 @@
         </a>
 
         <div class="navbar-menu">
-            <a href="#header" class="active">Accueil</a>
-            <a href="#first-section">Section1</a>
-            <a href="#second-section">Section2</a>
-            <a href="#team">L'équipe</a>
-            <a href="#fourth-section">Section4</a>
+            <a href="#header" class="active">ST-TRACS</a>
+            <a href="#first-section">Contexte</a>
+            <a href="#second-section">Présentation</a>
+            <a href="#third-section">Extras</a>
+            <a href="#fourth-section">Equipe</a>
         </div>
         <div class="navbar-ico-resp" id="navbar-ico-resp">
         </div>
@@ -39,12 +39,18 @@
 <section id="header">
     <div class="bg-cover">
         <div class="header-content st-container" id="header-content">
-            <h1>TESEO</h1>
+            <h1>ST TRACS</h1>
+            <h2>
+                <span class="header-first-letter">T</span>eseo
+                <span class="header-first-letter">R</span>eceiver
+                <span class="header-first-letter">A</span>dvanced
+                <span class="header-first-letter">C</span>ontrol
+                <span class="header-first-letter">S</span>uite
+            </h2>
 
-            <p>Une application mise en place en partenariat avec l'entreprise ST Microelectronics par des étudiants de
-               l'INSA de Rennes.</p>
+            <p>Une application Android dédiée à l'analyse de données GPS & Dead Reckoning</p>
 
-            <a class="header-btn discover-btn" href="#first-section">Découvrez</a>
+            <a class="header-btn discover-btn" href="#first-section">Découvrir</a>
         </div>
         <div class="scroll-down">
             <a href="#first-section" class="discover-btn">
@@ -59,22 +65,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 project-presentation-description">
-                    <p>TESEO est une application développée par des étudiants de l'INSA de Rennes en département informatique dans le cadre du projet de 4ème année en partenariat avec l'entreprise ST Microelectronics.</p>
+                    <p>ST-TRACS est une application développée par 8 étudiants du département informatique de l'INSA de Rennes, en collaboration avec STMicroelectronics</p>
                 </div>
                 <div class="col-md-4 project-presentation-col">
                     <span class="icon-user-tie st-icon"></span>
                     <h3>Le client</h3>
-                    <p>C'est l'entreprise ST Microelectronics qui nous a sollicité pour répondre à un besoin réel de l'entreprise.</p>
+                    <p>La division automobile de STMicroelectronics nous a sollicité pour répondre à un besoin réel de l'entreprise</p>
                 </div>
                 <div class="col-md-4 project-presentation-col">
                     <span class="icon-profile st-icon"></span>
                     <h3>Son besoin</h3>
-                    <p>L'entreprise veut tester sa solution de <strong>Dead Reckoning</strong>: un algorithme permettant de calculer la position actuelle lors d'une perte de signal GPS grâce aux différents capteurs présents dans la voiture.</p>
+                    <p>L'entreprise veut tester sa solution de <strong>Dead Reckoning</strong>, une technologie offrant la possibilité de poursuivre la navigation assistée par GPS même lors de la perte des signaux satellites.</p>
                 </div>
                 <div class="col-md-4 project-presentation-col">
                     <span class="icon-mobile2 st-icon"></span>
                     <h3>La solution</h3>
-                    <p>La solution envisagée est une application Android permettant de visualiser les différentes données GPS et de l'algorithme Dead Reckoning.</p>
+                    <p>La solution envisagée est une application Android permettant aux collaborateurs de STMicroelectronics de visualiser les données GPS et Dead Reckoning renvoyées par la puce testée.</p>
                 </div>
             </div>
         </div>
@@ -82,7 +88,7 @@
 </section>
 
 <section class="content s2 container-fluid" id="second-section">
-    <h1 class="text-center">Les vues</h1>
+    <h1 class="text-center">Présentation</h1>
 
     <h3>Skyview</h3>
 
@@ -180,7 +186,85 @@
     </div>
 </section>
 
-<section class="content team" id="team">
+<section class="content s3 container-fluid" id="third-section" style="background-color: #336633">
+    <h2>Extras</h2>
+
+    <div class="carousel">
+        <div class="carousel-slide">
+            <div class="row">
+                <img src="img/s3/menu.png" class="col-md-8" />
+
+                <div class="well col-md-3">
+                    <h3>Menu d'options</h3>
+
+                    <p>
+                        Des fonctionnalités supplémentaires sont disponibles via le menu d'options.
+                        On y accède par un bouton se situant dans le coin supérieur droit de l'application
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-slide">
+            <div class="row">
+                <img src="img/s3/menu_select_device.png" class="col-md-8" />
+
+                <div class="well col-md-3">
+                    <h3>Select Device</h3>
+
+                    <p>
+                        Cette vue permet de se connecter à une puce GPS via Bluetooth.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row">
+                <img src="img/s3/menu_playback.png" class="col-md-8" />
+
+                <div class="well col-md-3">
+                    <h3>Playback</h3>
+
+                    <p>
+                        L'application permet d'enregistrer le flux de messages bruts provenant d'une puce GPS.
+                        Il faut donc pouvoir les rejouer après enregistrement, ce que permet cette vue.
+                        Elle permet de plus de configurer la vitesse de lecture de l'enregistrement,
+                        et donne la possibilité à l'utilisateur de se déplacer à une position arbitraire du fichier.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row">
+                <img src="img/s3/menu_upload.png" class="col-md-8" />
+
+                <div class="well col-md-3">
+                    <h3>Upload File</h3>
+
+                    <p>
+                        Cette vue est elle aussi en lien avec l'enregistrement de flux de messages provenant de la puce GPS.
+                        Elle permet d'envoyer l'enregistrement réalisé vers un serveur FTP distant.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row">
+                <img src="img/s3/menu_settings.png" class="col-md-8" />
+
+                <div class="well col-md-3">
+                    <h3>Settings</h3>
+
+                    <p>
+                        Cette vue permet de configurer plusieurs aspects de l'application :
+                        système d'unité utilisé, paramètres liés aux positionnement, etc.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content team" id="fourth-section">
     <h2>L'équipe</h2>
 
     <div class="table-responsive">
@@ -188,156 +272,58 @@
             <tr>
                 <td><img src="img/teseo.png" />
 
-                    <p>Bastien Baret</p></td>
+                    <p>Bastien Baret</p>
+                    <p class="fonction">Etudiant</p>
+                </td>
                 <td><img src="img/teseo.png" />
 
-                    <p>Laura Guillemot</p></td>
+                    <p>Laura Guillemot</p>
+                    <p class="fonction">Etudiante</p>
+                </td>
                 <td><img src="img/teseo.png" />
-
-                    <p>Hyukchan Kwon</p></td>
+                    <p>Hyukchan Kwon</p>
+                    <p class="fonction">Etudiant</p>
+                </td>
                 <td><img src="img/teseo.png" />
-
-                    <p>Delphine Millet</p></td>
+                    <p>Delphine Millet</p>
+                    <p class="fonction">Etudiante</p>
+                </td>
             </tr>
             <tr>
                 <td><img src="img/teseo.png" />
-
-                    <p>Thibault Rapin</p></td>
+                    <p>Thibault Rapin</p>
+                    <p class="fonction">Etudiant</p>
+                </td>
                 <td><img src="img/teseo.png" />
-
-                    <p>Mathieu Spegagne</p></td>
+                    <p>Mathieu Spegagne</p>
+                    <p class="fonction">Etudiant</p>
+                </td>
                 <td><img src="img/teseo.png" />
-
-                    <p>Oana Suciu</p></td>
+                    <p>Oana Suciu</p>
+                    <p class="fonction">Etudiante</p>
+                </td>
                 <td><img src="img/teseo.png" />
-
-                    <p>Maxime Thébault</p></td>
+                    <p>Maxime Thébault</p>
+                    <p class="fonction">Etudiant</p>
+                </td>
             </tr>
             <tr>
                 <td><img src="img/teseo.png" />
-
-                    <p>Peggy Cellier</p></td>
+                    <p>Peggy Cellier</p>
+                    <p class="fonction">Encadrante</p>
+                </td>
                 <td><img src="img/teseo.png" />
-
-                    <p>Laurence Rozé</p></td>
+                    <p>Laurence Rozé</p>
+                    <p class="fonction">Encadrante</p>
+                </td>
                 <td><img src="img/teseo.png" />
-
-                    <p>Fabrice Deruy</p></td>
+                    <p>Fabrice Deruy</p>
+                    <p class="fonction">Client</p>
+                </td>
                 <td></td>
             </tr>
         </table>
     </div>
-</section>
-
-<section class="content" id="fourth-section" style="background-color: #336633">
-    <h2>Menu d'options</h2>
-
-    <div class="carousel">
-        <div class="carousel-slide">
-            <div class="row">
-                <img src="img/s4/menu_select_device.png" class="col-md-8" />
-
-                <div class="well col-md-4">
-                    <h3>Select Device</h3>
-
-                    <p>
-                        Si la tablette détecte des appareils connectés en bluetooth, l'application doit permettre
-                        à l’utilisateur de s’y connecter. Dans le cas contraire, elle se connecte automatiquement
-                        au GPS interne. Cette vue nous propose tous les appareils (GPS)
-                        , qu’ils soient internes ou externes, ainsi que leur adresse MAC. Une fois
-                        l’appareil sélectionné, une boîte de dialogue apparaît, dans laquelle il y a
-                        une barre de progression pour indiquer les étapes de connexion ainsi qu'un bouton permettant
-                        d’annuler cette connexion en cours.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="row">
-                <img src="img/s4/menu_playback.png" class="col-md-8" />
-
-                <div class="well col-md-3">
-                    <h3>Playback</h3>
-
-                    <p>
-                        Cette vue nous permet de rejouer un parcours déjà enregistré.
-                        Pour cela elle donne accès à un explorateur de fichier où l’utilisateur pourra selectionner le
-                        fichier qu'il veut rejouer.
-                        Après la séléction, une boîte de dialogue s’affiche où il peut régler plusieurs paramètres comme
-                        la vitesse
-                        à laquelle il veut que la vidéo se déroule. De plus, il peut choisir à partir de
-                        quel moment il veut rejouer la vidéo grâce à un curseur de contrôle. Après avoir
-                        choisi les réglages qui lui conviennent, l’utilisateur peut lancer le playback ou
-                        annuler en cliquant sur les deux boutons respectifs.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="row">
-                <img src="img/s4/menu_upload.png" class="col-md-8" />
-
-                <div class="well col-md-3">
-                    <h3>Upload File</h3>
-
-                    <p>
-                        Cette vue permet d’envoyer des fichiers présents sur la carte SD
-                        vers un serveur FTP si la connexion réseau est établie (3G/wifi). L’utilisateur
-                        a la possiblité de choisir le fichier qu’il veut enregistrer. Une fois qu’il l’a
-                        sélectionné une boîte de dialogue apparaît avec la possibilité de spécifier le nom du fichier
-                        choisi, la progression de l’enregistrement ainsi ainsi qu'un bouton pour annuler
-                        l’envoi. La vue présente aussi à titre informatif l’adresse IP du
-                        serveur FTP, le port de connexion, ainsi que le login et son mot de passe.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="row">
-                <img src="img/s4/menu_settings.png" class="col-md-8" />
-
-                <div class="well col-md-3">
-                    <h3>Settings</h3>
-
-                    <p>
-                        Cette vue permet à l’utilisateur de faire plusieurs réglages et ressemble à
-                        la figure ci-contre. Les différents réglages possibles seront :
-                    </p>
-
-                    <ul style="padding-left: 20px">
-                        <li>
-                            l’Écran d’accueil au démarrage de l’application ;
-                        </li>
-                        <li>
-                            l’orientation de l’écran (auto, paysage, portrait) ;
-                        </li>
-                        <li>
-                            l’activation ou la désactivation de l’extinction automatique de l’écran ;
-                        </li>
-                        <li>
-                            le type de carte ;
-                        </li>
-                        <li>
-                            le datum (WGS84 (World Geodetic System 1984 ) par défaut) ;
-                        </li>
-                        <li>
-                            le format de l’heure (24H, AM/PM pour la version en anglais) ;
-                        </li>
-                        <li>
-                            le format des coordonnées GNSS (DD°MM.MMMM’; DD°MM’SS.SSS) ;
-                        </li>
-                        <li>
-                            l’unité des vitesses et distances (Métrique, Nautique, Impérial) ;
-                        </li>
-                        <li>
-                            l’unité d’altitude (Métrique, Impérial).
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
 </section>
 
 <script type="text/javascript">
