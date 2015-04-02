@@ -1,5 +1,6 @@
 body {
     font-family: Open sans;
+    background-color: #e7e9e8;
 }
 
 /****************************************
@@ -218,26 +219,38 @@ section.team {
     padding: 20px 30px;
 }
 
-table.team-presentation > tbody > tr > td {
-    border-top:     0;
-    vertical-align: middle;
-    text-align:     center;
+.team-presentation {
+    margin: auto;
+    margin-top: 30px;
 }
 
-.team-presentation td img {
-    width: 110px;
+.team-presentation .profile {
+    margin: 10px 10px;
+    padding-top: 55px;
+    background-color: white;
+    height: 150px;
+    box-shadow: 0px 5px 7px rgba(0,0,0,0.22);
 }
 
-.team-presentation td p {
-    font-family: Open sans;
-    font-size:   14px;
+.team-presentation .student {
+    border-top: 2px solid #26b4e9;
+}
+
+.team-presentation .teacher {
+    border-top: 2px solid #53dd4c;
+}
+
+.team-presentation .client {
+    border-top: 2px solid #e92626;
+}
+
+.team-presentation p {
+    margin: 0;
+    text-align: center;
     font-weight: 600;
 }
 
 .team-presentation .fonction {
-    font-family: Open sans;
-    font-size:   12px;
-    margin-top:  -10px;
     font-weight: 300;
 }
 
